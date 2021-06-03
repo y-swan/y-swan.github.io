@@ -1,0 +1,12 @@
+.case {
+  position: fixed;
+  z-index: 999;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(130, 121, 121);
+  height: 0vh;
+  transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}

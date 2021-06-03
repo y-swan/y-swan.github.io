@@ -1,0 +1,22 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "Prompt", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+#showScroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    .photo {
+      display: none;
+    }
+    .left {
+      width: 100%;
+    }
+
+  }
