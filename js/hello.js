@@ -86,13 +86,7 @@ const helloContent = `<div class="left">
       <div class="arrow" id="link"><img src="img/arrow-v.svg" alt="arrow" /></div>
     </div>
     </div>
-<div class="photo">
-    <video autoplay loop id="video-background" muted>
-        <source src="video/comp13.mp4" type="video/mp4" />
-        <source src="video/-.webm" type="video/webm" />
-        <source src="video/-.ogg" type="video/ogg" />
-      </video>
-</div>
+
 </div>
 </div>`
 
@@ -103,11 +97,11 @@ const helloContent = `<div class="left">
 
 
 
-{/* <div class="portfolio">
+/*{ <div class="portfolio">
   <div class="start-100">
     <p class="title">Selected works</p>
   </div>
-</div>; */}
+</div>; }*/
 
 // function onScroll2(){
 //   window.addEventListener('scroll', function() {
