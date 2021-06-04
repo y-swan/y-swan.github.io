@@ -2,10 +2,11 @@ window.addEventListener("load", function() {
   // const tool = new Tool();
   // tool.height(); //
 
-  const loader = new Loader(3000, "#222127", "#fff");
+  const loader = new Loader(5000, "#222127", "#fff");
   const hello = new Hello(2000);
   const portfolio = new Portfolio(2000);
   loader.load();
+  // loader.changePosition();
   loader.remove();
   hello.appear();
   portfolio.appear();

@@ -19,3 +19,7 @@
   transition: 0.5s cubic-bezier(0.5, 0, 0.5, 1);
 }
 
+.logo-loader {
+  position: absolute;
+  transition: 4.5s cubic-bezier(0.5, 0, 0.5, 1);
+}

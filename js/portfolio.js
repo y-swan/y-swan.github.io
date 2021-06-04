@@ -19,11 +19,26 @@ const portfolioContent = `
 <div class="start-100">
   <p class="title">Selected works</p>
 </div>
-<div class="thumb">
+<div class="container-portolio">
+
+<div class="cover">
   <img class="img" src="img/bg-2.jpg" alt="Girl in a jacket">
-  
   <div class="case-title">Disaster alert mobile appliction</div>
   <div class="tags">Branding, UI, UX, Producrt Design</div>
   <div class="desk">Disaster alert mobile appliction. Disaster alert mobile appliction. Disaster alert mobile appliction. </div>
+</div>
+<div class="cover">
+  <img class="img" src="img/bg-2.jpg" alt="Girl in a jacket">
+  <div class="case-title">Disaster alert mobile appliction</div>
+  <div class="tags">Branding, UI, UX, Producrt Design</div>
+  <div class="desk">Disaster alert mobile appliction. Disaster alert mobile appliction. Disaster alert mobile appliction. </div>
+</div>
+<div class="cover">
+  <img class="img" src="img/bg-2.jpg" alt="Girl in a jacket">
+  <div class="case-title">Disaster alert mobile appliction</div>
+  <div class="tags">Branding, UI, UX, Producrt Design</div>
+  <div class="desk">Disaster alert mobile appliction. Disaster alert mobile appliction. Disaster alert mobile appliction. </div>
+</div>
+
 </div>
 `;
