@@ -1,8 +1,8 @@
 class Loader {
-  constructor(duration, color1, color2) {
+  constructor(duration, background, color) {
     this.duration = duration;
-    this.color1 = color1;
-    this.color2 = color2;
+    this.bg = background;
+    this.color = color;
   }
 
   load() {
@@ -12,10 +12,9 @@ class Loader {
     document.body.appendChild(div);
 
     const loader = document.querySelector(".loader");
-
-    loader.style.background = this.color1;
-    
+    loader.style.background = this.bg;
     setTimeout(changePosition, this.duration);
+
 
     function changePosition() { 
       const svg = loader.firstElementChild;
