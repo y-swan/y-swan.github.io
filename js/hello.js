@@ -36,12 +36,14 @@ class Hello {
 
     function logo() {
       const logoImg = document.getElementById("logo");
-      logoImg.addEventListener("mouseover", function() {
-        console.log(logoImg);
-        this.style.cursor = "pointer";
-        this.style.width = "150px";
-        this.style.height = "150px";
-      });
+      logoImg.style.width = "100px";
+      logoImg.style.height = "100px";
+      // logoImg.addEventListener("mouseover", function() {
+      //   console.log(logoImg);
+      //   this.style.cursor = "pointer";
+      //   this.style.width = "150px";
+      //   this.style.height = "150px";
+      // });
 
     }
 
