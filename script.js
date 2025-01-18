@@ -1,8 +1,11 @@
 // Helper function to animate an element (Web Animations API)
 // Returns a Promise that resolves when the animation finishes.
 function animateElement(element, keyframes, options) {
-  const anim = element.animate(keyframes, options);
-  return anim.finished;
+  return new Promise((resolve) => {
+    const animation = element.animate(keyframes, options);
+    animation.onfinish = () => resolve(animation);
+    // If you want to handle cancel, you could do: animation.oncancel = ...
+  });
 }
 
 async function runSequence() {
@@ -12,7 +15,7 @@ async function runSequence() {
 
   // 1) Show the first SVG for 3 seconds.
   //    Since it's already visible, we just wait (no animation).
-  await new Promise(resolve => setTimeout(resolve, 3000));
+  await new Promise(resolve => setTimeout(resolve, 2500));
 
   // 2) Animate the white circle from scale(2) => scale(0),
   //    revealing the #3498db background behind it.

@@ -51,9 +51,16 @@
       z-index: 1001;
  /*     width: 100px;
       height: 100px;*/
+        transform-box: fill-box;    
+  transform-origin: center;   
+  transition: transform 0.3s ease-in-out;
       background: none;
       display: none;   /* hidden initially */
     }
+
+    #secondSVG:hover {
+  transform: scale(1.5);
+}
 
     /* A large white circle covering the screen (initially).
        It's placed above the container (#3498db), so you see white.
