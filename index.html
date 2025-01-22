@@ -40,8 +40,6 @@
     #firstSVG {
       position: relative;
       z-index: 1001;   /* on top of the circle */
-/*      width: 90px;
-      height: 86px;*/
       background: none;
     }
 
@@ -49,17 +47,15 @@
     #secondSVG {
       position: relative;
       z-index: 1001;
- /*     width: 100px;
-      height: 100px;*/
-        transform-box: fill-box;    
-  transform-origin: center;   
-  transition: transform 0.3s ease-in-out;
+      transform-box: fill-box;    
+      transform-origin: center;   
+      transition: transform 0.3s ease-in-out;
       background: none;
       display: none;   /* hidden initially */
     }
 
     #secondSVG:hover {
-  transform: scale(1.5);
+      transform: scale(1.5);
 }
 
     /* A large white circle covering the screen (initially).
