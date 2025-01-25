@@ -28,6 +28,15 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <title>Y-Swan</title>
   <style>
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2; /* Ensure the canvas is below the content */
+      pointer-events: none; /* Prevent the canvas from blocking clicks */
+    }
     /* Reset body margin/padding */
     html, body {
       margin: 0;
@@ -42,7 +51,7 @@
       position: relative;
       width: 100%;
       height: 100%;
-      background-color: #ffffff; /* NEW color to reveal */
+      background-color: #fff; /* NEW color to reveal */
       overflow: hidden;          /* ensure nothing spills out */
       
       display: flex;
@@ -53,14 +62,14 @@
     /* First SVG: visible from the start, layered above the white circle */
     #firstSVG {
       position: relative;
-      z-index: 1001;   /* on top of the circle */
+      z-index: 3;   /* on top of the circle */
       background: none;
     }
 
     /* Second SVG: hidden at first */
     #secondSVG {
       position: relative;
-      z-index: 1001;
+      z-index: 3;
       transform-box: fill-box;    
       transform-origin: center;   
       transition: transform 0.3s ease-in-out;
@@ -85,7 +94,7 @@
       height: 100vmax;
       background-color: #151515; /* the OLD color (what you see at the start) */
       border-radius: 50%;
-      z-index: 1000;          /* below firstSVG, but above the container */
+      z-index: 2;          /* below firstSVG, but above the container */
       pointer-events: none;
     }
   </style>
@@ -113,7 +122,8 @@
     <div id="circleOverlay"></div>
 
   </div>
-
+  <canvas id="dotCanvas"></canvas>
   <script src="script.js"></script>
+  <script src="dots.js"></script>
 </body>
 </html>
